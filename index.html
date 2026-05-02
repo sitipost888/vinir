@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МСС — Смыслы и сайт для виниров | Находим ДНК услуги и упаковываем в лендинг</title>
+    <meta name="description" content="Студия МСС создаёт смыслы, манифест и продающий лендинг для клиник, которые хотят продавать виниры дорого. Находим ДНК услуги, снимаем страхи, превращаем посетителей в записи. Три тарифа: от 30 000 до 90 000 ₽. Юлия: +7 923 570-33-35">
+    <meta name="keywords" content="сайт для виниров, лендинг виниры, смыслы для стоматологии, манифест клиники, продающий сайт виниры, ДНК бренда стоматология, сайт со смыслом виниры, маркетинговый сайт стоматология">
+    <meta property="og:title" content="МСС — Смыслы и сайт для виниров">
+    <meta property="og:description" content="Находим ДНК услуги, создаём манифест и ценности, упаковываем в лендинг, который продаёт виниры дорого. От 30 000 ₽.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #faf8f6;
+            --bg2: #f3efeb;
+            --bg3: #e8e2da;
+            --accent: #8b6914;
+            --accent-light: #a67c1e;
+            --accent-dim: rgba(139, 105, 20, 0.08);
+            --accent-border: rgba(139, 105, 20, 0.25);
+            --text: #2c2620;
+            --text-light: #4a423a;
+            --muted: #7a7268;
+            --border: rgba(0, 0, 0, 0.06);
+            --white: #ffffff;
+            --card-bg: #ffffff;
+            --nav-bg: rgba(250, 248, 246, 0.94);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Golos Text', sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--nav-bg);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--accent);
+            letter-spacing: 0.05em;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--text);
+        }
+
+        nav a.cta-nav {
+            background: var(--accent);
+            color: #fff;
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+
+        nav a.cta-nav:hover {
+            background: var(--accent-light);
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8rem 2rem 5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        .hero-eyebrow {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+        .hero-eyebrow::before {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        h1 {
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: clamp(2.2rem, 5.5vw, 4.2rem);
+            line-height: 1.08;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+            color: #1a1612;
+        }
+
+        h1 em {
+            font-style: normal;
+            color: var(--accent);
+        }
+
+        .hero-sub {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            color: var(--muted);
+            max-width: 620px;
+            margin-bottom: 2.5rem;
+            line-height: 1.65;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent);
+            color: #fff;
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.9rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.15s;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-1px);
+        }
+
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: transparent;
+            color: var(--text);
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.9rem 1.5rem;
+            border-radius: 5px;
+            border: 1px solid var(--accent-border);
+            text-decoration: none;
+            transition: border-color 0.2s;
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--accent);
+        }
+
+        .hero-proof {
+            margin-top: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .proof-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .proof-num {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .proof-label {
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin-top: 0.2rem;
+        }
+
+        section {
+            position: relative;
+            z-index: 1;
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 0.68rem;
+            letter-spacing: 0.2em;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+        .section-label::before {
+            content: '';
+            display: inline-block;
+            width: 1.5rem;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        h2 {
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: clamp(1.7rem, 3.8vw, 2.8rem);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            color: #1a1612;
+        }
+
+        h2 em {
+            font-style: normal;
+            color: var(--accent);
+        }
+
+        .section-desc {
+            color: var(--muted);
+            max-width: 600px;
+            margin-bottom: 3rem;
+            font-size: 1.05rem;
+        }
+
+        .top-quote-section {
+            background: var(--bg2);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .top-quote {
+            font-family: 'Golos Text', sans-serif;
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            font-weight: 600;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+            color: #1a1612;
+        }
+
+        .top-quote em {
+            font-style: normal;
+            color: var(--accent);
+        }
+
+        .problem-section {
+            background: var(--bg2);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .problem-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.8rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #c44d4d;
+            opacity: 0.4;
+        }
+
+        .problem-icon {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .problem-card h3 {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            color: #1a1612;
+        }
+
+        .problem-card p {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .meaning-section {
+            background: var(--bg);
+        }
+
+        .meaning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .meaning-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.25s, transform 0.2s;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+        }
+
+        .meaning-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .meaning-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        .meaning-icon {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            line-height: 1;
+        }
+
+        .meaning-card h3 {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            letter-spacing: 0.02em;
+        }
+
+        .meaning-card p {
+            font-size: 0.92rem;
+            color: var(--muted);
+            line-height: 1.75;
+        }
+
+        .example-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2.5rem;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+        }
+
+        .example-box h3 {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.04em;
+        }
+
+        .example-compare {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .example-col {
+            padding: 1.5rem;
+            border-radius: 6px;
+        }
+
+        .example-col.bad {
+            background: rgba(196, 77, 77, 0.04);
+            border: 1px solid rgba(196, 77, 77, 0.15);
+        }
+
+        .example-col.good {
+            background: var(--accent-dim);
+            border: 1px solid var(--accent-border);
+        }
+
+        .example-col h4 {
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.05em;
+        }
+
+        .example-col.bad h4 {
+            color: #c44d4d;
+        }
+
+        .example-col.good h4 {
+            color: var(--accent);
+        }
+
+        .example-col p {
+            font-size: 0.88rem;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .process-section {
+            background: var(--bg2);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+
+        .step-num {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--accent-dim);
+            line-height: 1;
+            margin-bottom: 0.8rem;
+        }
+
+        .step-title {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .step-desc {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .pricing-section {
+            background: var(--bg);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 2.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.25s, transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--accent);
+            box-shadow: 0 4px 24px rgba(139, 105, 20, 0.1);
+        }
+
+        .pricing-card.featured::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .pricing-name {
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.04em;
+        }
+
+        .pricing-price {
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: 2.8rem;
+            color: #1a1612;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-sub {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+
+        .pricing-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            margin-bottom: 2rem;
+            flex: 1;
+        }
+
+        .pricing-list li {
+            font-size: 0.88rem;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+        }
+
+        .pricing-list li::before {
+            content: '✦';
+            color: var(--accent);
+            font-size: 0.7rem;
+            flex-shrink: 0;
+            margin-top: 0.3rem;
+        }
+
+        .pricing-cta {
+            display: block;
+            text-align: center;
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .pricing-cta:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .pricing-card.featured .pricing-cta {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .pricing-card.featured .pricing-cta:hover {
+            background: var(--accent-light);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.25rem 0.7rem;
+            border-radius: 3px;
+            letter-spacing: 0.05em;
+        }
+
+        .quote-section {
+            background: var(--bg2);
+            padding: 6rem 2rem;
+            position: relative;
+            z-index: 1;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .quote-wrap {
+            max-width: 850px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .quote-photo {
+            width: 130px;
+            height: 130px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            border: 2px solid var(--accent);
+            background: var(--bg3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .quote-photo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .quote-text blockquote {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 300;
+            font-style: italic;
+            color: #1a1612;
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.02em;
+            opacity: 0.85;
+        }
+
+        .quote-text blockquote em {
+            font-style: italic;
+            color: var(--accent);
+            font-weight: 400;
+        }
+
+        .quote-author {
+            color: var(--accent);
+            font-size: 0.88rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.15rem;
+        }
+
+        .quote-role {
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-weight: 300;
+            letter-spacing: 0.03em;
+        }
+
+        .manifest-section {
+            background: var(--bg2);
+        }
+
+        .manifest-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .manifest-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2.2rem 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.25s, transform 0.2s;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+        }
+
+        .manifest-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .manifest-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--accent);
+            opacity: 0.5;
+        }
+
+        .manifest-icon {
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+            line-height: 1;
+        }
+
+        .manifest-card h3 {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        .manifest-card p {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .faq-section {
+            background: var(--bg);
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            margin-top: 2.5rem;
+            max-width: 800px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            width: 100%;
+            background: var(--card-bg);
+            border: none;
+            padding: 1.4rem 1.8rem;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #1a1612;
+            transition: background 0.2s;
+        }
+
+        .faq-q:hover {
+            background: var(--bg2);
+        }
+
+        .faq-q.open {
+            color: var(--accent);
+        }
+
+        .faq-arrow {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            border: 1.5px solid var(--muted);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.25s, border-color 0.2s;
+            font-size: 0.7rem;
+            color: var(--muted);
+        }
+
+        .faq-q.open .faq-arrow {
+            transform: rotate(45deg);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.25s;
+            background: var(--card-bg);
+        }
+
+        .faq-a.open {
+            max-height: 500px;
+        }
+
+        .faq-a-inner {
+            padding: 1.2rem 1.8rem 1.6rem;
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.75;
+        }
+
+        .form-section {
+            background: var(--bg2);
+        }
+
+        .form-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .form-left h2 {
+            margin-bottom: 1rem;
+        }
+
+        .form-left p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-lines {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .contact-line {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .contact-line strong {
+            color: #1a1612;
+        }
+
+        .contact-line a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        form {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+        }
+
+        form label {
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: -0.5rem;
+            letter-spacing: 0.04em;
+        }
+
+        form input,
+        form textarea,
+        form select {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: #1a1612;
+            font-family: 'Golos Text', sans-serif;
+            font-size: 0.95rem;
+            padding: 0.75rem 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+            width: 100%;
+        }
+
+        form input:focus,
+        form textarea:focus,
+        form select:focus {
+            border-color: var(--accent);
+        }
+
+        form textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        form select {
+            appearance: none;
+            cursor: pointer;
+        }
+
+        form button {
+            background: var(--accent);
+            color: #fff;
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.95rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+            margin-top: 0.5rem;
+        }
+
+        form button:hover {
+            background: var(--accent-light);
+            transform: translateY(-1px);
+        }
+
+        .form-privacy {
+            font-size: 0.75rem;
+            color: var(--muted);
+            text-align: center;
+        }
+
+        .success-msg {
+            display: none;
+            background: var(--accent-dim);
+            border: 1px solid var(--accent-border);
+            border-radius: 6px;
+            padding: 1.5rem;
+            text-align: center;
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background: var(--bg);
+            border-top: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--muted);
+            position: relative;
+            z-index: 1;
+        }
+
+        footer .footer-brand {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            padding: 1rem;
+            background: rgba(250, 248, 246, 0.95);
+            border-top: 1px solid var(--border);
+            backdrop-filter: blur(12px);
+        }
+
+        .sticky-cta a {
+            display: block;
+            text-align: center;
+            background: var(--accent);
+            color: #fff;
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 860px) {
+            nav {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 4rem 1.2rem;
+            }
+
+            .hero {
+                padding: 6rem 1.2rem 3rem;
+            }
+
+            .form-wrap {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .meaning-grid,
+            .manifest-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .problem-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .example-compare {
+                grid-template-columns: 1fr;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .quote-wrap {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .quote-photo {
+                width: 110px;
+                height: 110px;
+            }
+
+            .quote-text blockquote {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .sticky-cta {
+                display: block;
+            }
+
+            nav a.cta-nav {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 5rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-proof {
+                gap: 1.5rem;
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero>* {
+            animation: fadeUp 0.6s ease both;
+        }
+
+        .hero>*:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .hero>*:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .hero>*:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .hero>*:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .hero>*:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">МСС<span>·студия</span></a>
+        <a href="#contact" class="cta-nav">Получить клиентов на виниры →</a>
+    </nav>
+
+    <section style="padding:0; position:relative; overflow:hidden;">
+        <div class="hero">
+            <div class="hero-eyebrow">Студия смыслов МСС — для виниров</div>
+            <h1>Сначала <em>смыслы</em>.<br>Потом сайт,<br>который продаёт<br>виниры дорого.</h1>
+            <p class="hero-sub">Виниры — это не про зубы. Это про уверенность, статус и право улыбаться без стеснения. Нахожу эти смыслы и упаковываю в лендинг, который превращает посетителей в пациентов с высоким чеком.</p>
+            <div class="hero-cta-row">
+                <a href="#contact" class="btn-primary">Получить клиентов на виниры →</a>
+                <a href="#meaning" class="btn-ghost">Как это работает</a>
+            </div>
+            <div class="hero-proof">
+                <div class="proof-item">
+                    <span class="proof-num">ДНК</span>
+                    <span class="proof-label">услуги</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-num">Манифест</span>
+                    <span class="proof-label">и ценности</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-num">Сайт</span>
+                    <span class="proof-label">для высокого чека</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="top-quote-section">
+        <p class="top-quote">
+            Виниры покупают не зубы. Покупают <em>право улыбаться</em> на фотографиях, на свиданиях, в зеркале каждое утро. Я упаковываю это в сайт.
+        </p>
+    </div>
+
+    <section class="problem-section" id="problem">
+        <div class="container">
+            <div class="section-label">Проблема</div>
+            <h2>Почему сайт с винирами<br><em>не продаёт</em></h2>
+            <p class="section-desc">Виниры — дорогая услуга. Пациент принимает решение не за минуту. Он сравнивает, сомневается, боится. Обычный сайт не отвечает на его глубинные вопросы.</p>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <h3>Нет обоснования цены</h3>
+                    <p>Сайт пишет «виниры от 35 000 ₽». Пациент думает: «Почему так дорого?» — и уходит искать дешевле. Сайт не объясняет, что пациент покупает не керамику, а новое качество жизни.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🪞</div>
+                    <h3>Говорят про материалы, а не про человека</h3>
+                    <p>«Керамические виниры E-max» — это описание продукта. Пациент хочет увидеть себя. Сайт не показывает это будущее.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🤷</div>
+                    <h3>Страхи не сняты</h3>
+                    <p>«Будет больно? А не слетят через год? А не будут выглядеть неестественно?» Сайт обходит эти вопросы. Пациент уходит думать — и не возвращается.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📱</div>
+                    <h3>Нет доказательств мастерства</h3>
+                    <p>Виниры — эстетическая услуга. Пациенту нужны фото до/после, видео процесса, истории пациентов. Без этого нет доверия. А без доверия нет записи.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="meaning-section" id="meaning">
+        <div class="container">
+            <div class="section-label">Что я делаю для виниров</div>
+            <h2>Смыслы, которые <em>продают</em><br>дорогую услугу</h2>
+            <p class="section-desc">Виниры — это не стоматологическая процедура. Это возвращение достоинства через улыбку. Смыслы строятся вокруг этого.</p>
+            <div class="meaning-grid">
+                <div class="meaning-card">
+                    <div class="meaning-icon">✨</div>
+                    <h3>ДНК услуги «Виниры»</h3>
+                    <p>Не «керамические накладки на зубы», а «новая улыбка за 2 визита». Не «исправление эстетических дефектов», а «право улыбаться без стеснения». Нахожу суть, которая отличает вашу клинику.</p>
+                </div>
+                <div class="meaning-card">
+                    <div class="meaning-icon">📜</div>
+                    <h3>Манифест эстетической стоматологии</h3>
+                    <p>Документ, который отвечает: «Почему пациент должен доверить свою улыбку именно вам?» На его основе пишутся тексты сайта, скрипты консультаций, посты. Всё говорит одним голосом.</p>
+                </div>
+                <div class="meaning-card">
+                    <div class="meaning-icon">💎</div>
+                    <h3>Ценности, которые оправдывают цену</h3>
+                    <p>Не «качественные материалы», а «работаем только с керамикой E-max — она неотличима от натуральной эмали». Не «опытные врачи», а «каждый доктор прошёл стажировку по эстетической стоматологии».</p>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>Пример: как смыслы меняют текст о винирах</h3>
+                <div class="example-compare">
+                    <div class="example-col bad">
+                        <h4>❌ Обычный сайт (без смыслов)</h4>
+                        <p>«Устанавливаем керамические виниры E-max. Современное оборудование, опытные врачи. Безболезненная установка. Цена от 35 000 ₽ за единицу. Запишитесь на консультацию!»</p>
+                    </div>
+                    <div class="example-col good">
+                        <h4>✅ Сайт со смыслами (после МСС)</h4>
+                        <p>«Представьте: вы на важном ужине. Кто-то рассказывает смешную историю — и вы смеётесь. Не прикрывая рот. Не отводя взгляд. Просто смеётесь. Через 2 визита это станет вашей реальностью. Мы создаём улыбки, которые неотличимы от натуральных. Приходите — покажем, как будет выглядеть ваша улыбка до начала лечения».</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-label">Как работаем</div>
+            <h2>4 этапа<br><em>смысловой работы</em></h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-num">1</div>
+                    <div class="step-title">Погружение в услугу</div>
+                    <p class="step-desc">Созвон с владельцем или главврачом. Задаю вопросы, которые помогут найти ДНК вашей услуги «виниры».</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">2</div>
+                    <div class="step-title">Смыслы и манифест</div>
+                    <p class="step-desc">Формулирую ДНК, манифест, ценности. Согласовываем. Это фундамент.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">3</div>
+                    <div class="step-title">Тексты для сайта</div>
+                    <p class="step-desc">На основе манифеста пишу каждый блок. Снимаю страхи, обосновываю цену, показываю результат.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">4</div>
+                    <div class="step-title">Сайт</div>
+                    <p class="step-desc">Верстаю, адаптирую, запускаю. Сайт продаёт не виниры — а достоинство через улыбку.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-label">Тарифы</div>
+            <h2>Три <em>тарифа</em></h2>
+            <p class="section-desc">Выберите тот, который подходит вашей клинике. Фиксированная цена. Без скрытых платежей.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-name">Смыслы + Манифест</div>
+                    <div class="pricing-price">30 000 ₽</div>
+                    <p class="pricing-sub">Стратегия без сайта</p>
+                    <ul class="pricing-list">
+                        <li>Аудит и поиск ДНК услуги «виниры»</li>
+                        <li>Манифест эстетической стоматологии</li>
+                        <li>Ценности (3–5 живых принципов)</li>
+                        <li>Смысловое ядро для будущего сайта</li>
+                    </ul>
+                    <a href="#contact" class="pricing-cta">Обсудить →</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Для клиник</div>
+                    <div class="pricing-name">Смыслы + Сайт</div>
+                    <div class="pricing-price">60 000 ₽</div>
+                    <p class="pricing-sub">Стратегия + лендинг</p>
+                    <ul class="pricing-list">
+                        <li>Аудит и поиск ДНК услуги «виниры»</li>
+                        <li>Манифест эстетической стоматологии</li>
+                        <li>Ценности (3–5 живых принципов)</li>
+                        <li>Продающий лендинг на основе смыслов</li>
+                        <li>Тексты, снимающие страхи и возражения</li>
+                        <li>Дизайн в атмосфере эстетики и статуса</li>
+                        <li>Адаптация под все устройства</li>
+                        <li>Базовая SEO-оптимизация</li>
+                        <li>Правки до утверждения</li>
+                    </ul>
+                    <a href="#contact" class="pricing-cta">Найти смыслы для виниров →</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-name">ДНК под ключ</div>
+                    <div class="pricing-price">90 000 ₽</div>
+                    <p class="pricing-sub">Полный пакет</p>
+                    <ul class="pricing-list">
+                        <li>Всё из тарифа «Смыслы + Сайт»</li>
+                        <li>Визуальный код бренда</li>
+                        <li>Генерация имиджевых изображений</li>
+                        <li>Смысловые тексты для соцсетей (5 шт.)</li>
+                        <li>Стратегия контента на 1 месяц</li>
+                        <li>30 дней поддержки после сдачи</li>
+                    </ul>
+                    <a href="#contact" class="pricing-cta">Обсудить →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="quote-section">
+        <div class="quote-wrap">
+            <div class="quote-photo">
+                <img src="https://i.ibb.co/Fbh3Dcb8/IMG-0698.jpg" alt="Юлия, основатель МСС">
+            </div>
+            <div class="quote-text">
+                <blockquote>
+                    «Виниры — это не про стоматологию. Это про достоинство. <em>Я нахожу этот смысл в каждой клинике и упаковываю его в сайт</em>, который продаёт не услугу — а право улыбаться без оглядки».
+                </blockquote>
+                <p class="quote-author">Юлия</p>
+                <p class="quote-role">Основатель и владелец студии МСС</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="manifest-section" id="manifest">
+        <div class="container">
+            <div class="section-label">Манифест МСС</div>
+            <h2>Принципы,<br><em>в которые я верю</em></h2>
+            <p class="section-desc">Это не просто слова. Это то, как я работаю с каждой клиникой.</p>
+            <div class="manifest-grid">
+                <div class="manifest-card">
+                    <div class="manifest-icon">🎯</div>
+                    <h3>Сначала пациент — потом процедура</h3>
+                    <p>Я не начинаю с описания виниров. Я начинаю с вопроса: «О чём мечтает пациент, когда ищет виниры?» И сайт строится от ответа.</p>
+                </div>
+                <div class="manifest-card">
+                    <div class="manifest-icon">🤖</div>
+                    <h3>Нейросети как команда</h3>
+                    <p>Под моим управлением работают ИИ-инструменты: копирайтер, аналитик, SEO-специалист. Скорость агентства — ответственность одного человека.</p>
+                </div>
+                <div class="manifest-card">
+                    <div class="manifest-icon">💎</div>
+                    <h3>Цена обоснована смыслами</h3>
+                    <p>Виниры — дорогая услуга. Я помогаю клинике объяснить цену через ценность, мастерство и результат. Пациент платит не за керамику — а за новую уверенность.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-label">Вопросы и ответы</div>
+            <h2>У вас есть вопросы —<br><em>у меня есть ответы</em></h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Чем смыслы для виниров отличаются от обычных текстов?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Обычный текст: «Устанавливаем керамические виниры от 35 000 ₽». Смысловой текст: «Представьте: вы просыпаетесь, смотрите в зеркало — и улыбаетесь. Не потому что надо. А потому что хочется. Мы делаем такие улыбки». Первое — прайс. Второе — обещание новой жизни.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Как смыслы помогают продавать виниры дороже?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Когда пациент видит только цену — он сравнивает её с конкурентами. Когда пациент видит смысл — он сравнивает ценность. Смыслы переводят разговор из плоскости «сколько стоит керамика» в плоскость «сколько стоит ваше право улыбаться без стеснения».</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        У меня уже есть сайт. Вы можете переделать страницу виниров?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Да. Анализирую текущую страницу: что работает, что нет. Создаю новую — с нуля, на основе найденных смыслов. Можно сделать отдельный лендинг под виниры или обновить страницу на основном сайте.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Сколько времени занимает проект?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Поиск смыслов и манифест — 3–5 дней. Сайт — 7–10 дней. Общий срок — 2–3 недели. Срочные проекты обсуждаем.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Что нужно для старта?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Фотографии работ (до/после), информация о врачах и технологиях, и 30–40 минут на интервью. Я задаю вопросы, которые помогут найти ДНК вашей услуги «виниры».</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Как происходит оплата?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Предоплата 50% перед стартом, остаток — после сдачи готового сайта и вашего одобрения. Работаю по договору или счёту.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Что если мне не понравится результат?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Манифест — результат совместной работы. Я нахожу смыслы вместе с вами. Если что-то не откликается — дорабатываю. Финальный платёж только после вашего «принято».</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="contact">
+        <div class="container">
+            <div class="form-wrap">
+                <div class="form-left">
+                    <div class="section-label">Контакты</div>
+                    <h2>Найдём смыслы<br><em>для виниров</em></h2>
+                    <p>Напишите — и я задам 3 вопроса, которые помогут понять, в чём уникальность вашей услуги «виниры». Это не бриф. Это начало поиска ДНК.</p>
+                    <div class="contact-lines">
+                        <div class="contact-line">
+                            <span>💬 Telegram:</span>
+                            <strong><a href="https://t.me/+79235703335">+7 923 570-33-35</a></strong>
+                        </div>
+                        <div class="contact-line">
+                            <span>📞 Телефон:</span>
+                            <strong><a href="tel:+79235703335">+7 923 570-33-35</a></strong>
+                        </div>
+                        <div class="contact-line" style="margin-top:1rem; font-size:0.8rem;">
+                            Юлия, основатель МСС. Отвечаю лично.
+                        </div>
+                    </div>
+                </div>
+
+                <form id="mainForm" onsubmit="submitForm(event)">
+                    <label>Ваше имя</label>
+                    <input type="text" name="name" placeholder="Как вас зовут?" required>
+
+                    <label>Телефон или Telegram</label>
+                    <input type="text" name="contact" placeholder="+7 ___ или @username" required>
+
+                    <label>Название клиники</label>
+                    <input type="text" name="clinic" placeholder="Название вашей стоматологии">
+
+                    <label>Что хотите получить?</label>
+                    <textarea name="message" placeholder="Расскажите о задаче: нужен манифест, лендинг под виниры, полный пакет..."></textarea>
+
+                    <button type="submit">Начать поиск смыслов →</button>
+                    <p class="form-privacy">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Не спамим.</p>
+                </form>
+
+                <div class="success-msg" id="successMsg" style="grid-column: 2;">
+                    ✅ Заявка отправлена!<br>Свяжусь с вами в ближайшее время.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-brand">МСС·студия</div>
+        <p>Смыслы, манифест, сайт — для виниров | Юлия, основатель | <a href="https://t.me/+79235703335">Telegram</a> | <a href="tel:+79235703335">+7 923 570-33-35</a></p>
+        <p style="margin-top:0.5rem;">© 2026 МСС. Все права защищены.</p>
+    </footer>
+
+    <div class="sticky-cta">
+        <a href="#contact">Получить клиентов на виниры →</a>
+    </div>
+
+    <script>
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const answer = item.querySelector('.faq-a');
+            const isOpen = answer.classList.contains('open');
+            document.querySelectorAll('.faq-a.open').forEach(a => a.classList.remove('open'));
+            document.querySelectorAll('.faq-q.open').forEach(b => b.classList.remove('open'));
+            if (!isOpen) {
+                answer.classList.add('open');
+                btn.classList.add('open');
+            }
+        }
+
+        function submitForm(e) {
+            e.preventDefault();
+            const form = document.getElementById('mainForm');
+            const data = new FormData(form);
+            const name = data.get('name');
+            const contact = data.get('contact');
+            const clinic = data.get('clinic') || 'не указана';
+            const message = data.get('message') || 'не указано';
+            const tgText = encodeURIComponent(
+                `Новая заявка с сайта МСС (Виниры)!\n\nИмя: ${name}\nКонтакт: ${contact}\nКлиника: ${clinic}\nЗадача: ${message}`
+                );
+            window.open(`https://t.me/share/url?url=https://mcc-studio.ru&text=${tgText}`, '_blank');
+            form.style.display = 'none';
+            const msg = document.getElementById('successMsg');
+            msg.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
